@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Web Flex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/45bca49838.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css/other/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="wrapper">
+    <nav class="navbar" id="navbar-ref">
+        <div class="navbar-left">
+            <a class="navbar-left__link">
+                <img class="navbar-left__img" src="img/logo-verde.png" alt="Logo Flex verde" width="30" height="24" />
+                <h4 class="navbar-left__title">Flex</h4>
+            </a>
+        </div>
+        <button class="navbar__mobile-btn" aria-controls="navMenu" aria-expanded="false">
+            <i class="fa-solid fa-bars big"></i> <!-- icono 'hamburguesa' -->
+            <i class="fa-solid fa-xmark big hidden"></i> <!-- icono 'X' -->
+        </button>
+        <div class="navbar-toggle" id="navMenu" data-visible="false">
+            <div class="navbar-center">
+                <ul class="navbar-center__list">
+                    <li class="navbar-center__item">
+                        <a class="navbar-center__link" aria-current="page" href="#producto-ref">Productos</a>
+                    </li>
+                    <li class="navbar-center__item">
+                        <a class="navbar-center__link" aria-current="page"
+                            href="#caracteristicas-ref">Caracteristicas</a>
+                    </li>
+                    <li class="navbar-center__item">
+                        <a class="navbar-center__link" aria-current="page" href="#precios-ref">Precios</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-rigth">
+                <button type="button" class="btn btn-small mobile" id="logInBtn">Ingresar</button>
+                <button type="button" class="btn btn-small green mobile mobile-green" id="singInNav">Registrarse</button>
+            </div>
+        </div>
+    </nav>
+    <main class="wrapper-main">
+        <hero class="hero" id="producto-ref">
+            <div class="hero-left">
+                <span class="hero-left__new">NUEVO</span>
+                <h1 class="hero-left__title">
+                    La plataforma para las empresas del futuro
+                </h1>
+                <p class="hero-left__text">
+                    Productos pensados para los negocios del próximo siglo
+                </p>
+                <div class="hero-left__buttons">
+                    <button type="button" class="btn btn-medium green">Solicitar demo</button>
+                    <button type="button" class="btn btn-medium white" id="singInHero">Registrarse</button>
+                </div>
+            </div>
+            <div class="hero-rigth">
+                <img src="img/circle3-yellow.svg" alt="imagen circulo" class="hero-rigth__img-top" />
+                <img src="img/header.jpg" alt="header" class="hero-rigth__img-center" />
+                <img src="img/dots3-blue.svg" alt="imagen de puntos" class="hero-rigth__img-bottom" />
+            </div>
+        </hero>
+        <section class="caracteristicas__conteiner" id="caracteristicas-ref">
+            <article class="caracteristicas__content">
+                <img class="caracteristicas__mail-icon-box" src="./img/mail-icon.svg" alt="mail icon" />
+                <h3 class="caracteristicas__heading">Capacitación</h3>
+                <p class="caracteristicas__paragraph">
+                    Asistencia y capacitación de primer nivel
+                </p>
+            </article>
+            <article class="caracteristicas__content">
+                <img class="caracteristicas__analytics-icon-box" src="./img/analytics-icon.svg" alt="analiytics icon" />
+                <h3 class="caracteristicas__heading">Analíticas claras</h3>
+                <p class="caracteristicas__paragraph">
+                    Disfruta de un dashboard de analíticas claras y accionables
+                </p>
+            </article>
+            <article class="caracteristicas__content">
+                <img class="caracteristicas__people-icon-box" src="./img/people-icon.svg" alt="people icon" />
+                <h3 class="caracteristicas__heading">Soluciones para equipos</h3>
+                <p class="caracteristicas__paragraph">
+                    Facilita el accionar de tu empresa con nuestra suite de herramientas
+                </p>
+            </article>
+        </section>
+        <section class="precios__wrapper" id="precios-ref">
+            <h1 class="precios__heading">Precios flexibles que escalan contigo</h1>
+            <p class="precios__sub-heading">
+                Nuestra facturación se ajusta al tamaño de tu empresa. Tiempo de
+                prueba 7 días en todos nuestros planes.
+            </p>
+            <article class="precios__main-section">
+                <div class="precios__box">
+                    <div class="precios__top-half">
+                        <span class="precios__span">PRECIO</span>
+                        <h2 class="precios__h-2">Plan básico</h2>
+                        <p class="precios__price-contenedor">
+                            <span class="precios__price-simbol">$</span>
+                            <span class="precios__price">10</span>
+                            <span class="precios__price-monthly">/mes</span>
+                        </p>
+                        <p class="precios__price-facturacion-anual">
+                            Facturado anualmente
+                        </p>
+                    </div>
+                    <div class="precios__bottom-half">
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion" src="./img/lista-de-verificacion.png" />1GB de
+                            almacenamiento
+                        </p>
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion" src="./img/lista-de-verificacion.png" />Dashboard
+                            completo
+                        </p>
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion" src="./img/lista-de-verificacion.png" />Asistencia
+                            por correo
+                        </p>
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion" src="./img/lista-de-verificacion.png" />Hasta 10
+                            miembros
+                        </p>
+                    </div>
+                    <div class="precios__btn-position">
+                        <button type="button" class="btn btn-big green">Solicitar demo</button>
+                    </div>
+                </div>
+                <div class="precios__box">
+                    <div class="precios__top-half">
+                        <span class="precios__span">PRECIO</span>
+                        <h2 class="precios__h-2">Plan freelancer</h2>
+                        <p class="precios__price-contenedor">
+                            <span class="precios__price-simbol">$</span><span class="precios__price">99</span>
+                            <span class="precios__price-monthly">/mes</span>
+                        </p>
+                        <p class="precios__price-facturacion-anual">
+                            Facturado anualmente
+                        </p>
+                    </div>
+                    <div class="precios__bottom-half">
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion"
+                                src="./img/lista-de-verificacion.png" />Características básicas
+                        </p>
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion" src="./img/lista-de-verificacion.png" />Asistencia
+                            preferencial
+                        </p>
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion" src="./img/lista-de-verificacion.png" />100GB de
+                            almacenamiento
+                        </p>
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion" src="./img/lista-de-verificacion.png" />Hasta 100
+                            miembros
+                        </p>
+                    </div>
+                    <div class="precios__btn-position">
+                        <button type="button" class="btn btn-big green">Solicitar demo</button>
+                    </div>
+                </div>
+                <div class="precios__box">
+                    <div class="precios__top-half">
+                        <span class="precios__span">PRECIO</span>
+                        <h2 class="precios__h-2">Plan empresas</h2>
+                        <p class="precios__price-contenedor">
+                            <span class="precios__price-simbol">$</span><span class="precios__price">799</span>
+                            <span class="precios__price-monthly">/mes</span>
+                        </p>
+                        <p class="precios__price-facturacion-anual">
+                            Facturado anualmente
+                        </p>
+                    </div>
+                    <div class="precios__bottom-half">
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion"
+                                src="./img/lista-de-verificacion.png" />Características freelancer
+                        </p>
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion" src="./img/lista-de-verificacion.png" />1TB de
+                            almacenamiento
+                        </p>
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion" src="./img/lista-de-verificacion.png" />Asistencia
+                            telefónica 24/7
+                        </p>
+                        <p class="precios__click-verificacion-text">
+                            <img class="precios__click-verificacion" src="./img/lista-de-verificacion.png" />Miembros
+                            ilimitados
+                        </p>
+                    </div>
+                    <div class="precios__btn-position">
+                        <button type="button" class="btn btn-big green">Solicitar demo</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="up-btn">
+             <!-- Up Boton -->
+            <button id="upBtn" class="upBtn hidden" title="Go to top">
+                <i class="fa-solid fa-upload small"></i>
+            </button>
+        </div>
+    </main>
+    <footer class="footer__conteiner">
+        <div class="footer__logo">
+            <a href="#navbar-ref" class="footer__img-link">
+                <img class="footer__logo-verde" src="./img/logo-verde.png" alt="logo flex">
+            </a>
+            <h4 class="footer__logo-title">Flex</h4>
+        </div>
+        <div>
+            <ul class="footer__links-group">
+                <li><a class="footer__link" href="">Producto</a></li>
+                <li><a class="footer__link" href="">Funcionalidades</a></li>
+                <li><a class="footer__link" href="">Precios</a></li>
+                <li><a class="footer__link" href="">Recursos</a></li>
+                <li><a class="footer__link" href="">Carreras</a></li>
+                <li><a class="footer__link" href="">Ayuda</a></li>
+                <li><a class="footer__link" href="">Privacidad</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="footer__copyright">© 2022 Flex. Un producto ficticio de Senpai.</p>
+        </div>
+    </footer>
+    <!-- log In -->
+    <section class="wrapper-modal hidden" id="logInModal" data-visible="false">
+        <div class="exit">
+            <button class="exit__btn" id="exitLogInModal">
+                <i class="fa-solid fa-xmark big"></i> 
+            </button>
+        </div>
+        <article class="modal">
+            <img class="modal__img" src="img/logo-blanco.png" alt="logo pulpo blanco">                 
+            <h1 class="modal__title">Ingresa a tu cuenta</h1>
+            <p class="modal__subtitle">y empieza a conseguir resultados</p>
+            <form class="modal-form">
+                <div class="modal-form__group">
+                    <label for="emailInput" class="modal-form__label">Correo</label>
+                    <input type="text" id="emailInput" class="modal-form__input" placeholder="tu-correo@senpaiacademy.com" name="tu-correo@senpaiacademy.com" required>
+                    <span></span>
+                </div>
+                <div class="modal-form__group">
+                    <label for="passwordInput" class="modal-form__label">Contraseña</label>
+                    <input type="password" id="passwordInput" class="modal-form__input" placeholder="*****************" name="" required>
+                    <span></span>
+                </div>
+                <div class="modal-form__group-col">
+                    <div class="modal-form__remember">
+                        <input type="checkbox" name="checkbox" id="checkboxInput" class="modal-form__remember-checkbox">
+                        <label for="checkboxInput" class="modal-form__label-sm">Recordarme</label>   
+                    </div>
+                    <div class="modal-form__forgetPassword">
+                        <a href="#" class="modal-form__link-sm">Olvide mi contraseña</a>
+                    </div>
+                </div>
+                <div class="modal-form__btn">
+                    <button type="submit" class="btn btn-big green" id="loginBtn">Ingresar</button>
+                </div>
+            </form>
+            <div class="modal-span">
+                <span class="modal-span__text">Aún no tienes cuenta?</span>
+                <a class="modal-span__link-sm" href="#" id="singInModal">Registrarse</a>
+            </div>
+        </article>
+    </section>
+    <!-- Sign Up -->
+    <section class="wrapper-singUp hidden" id="singUp" data-visible="false">
+        <div class="exit">
+            <button class="exit__btn" id="exitSingUp">
+                <i class="fa-solid fa-xmark big"></i> 
+            </button>
+        </div>
+        <article class="modal">
+            <img class="modal__img" src="img/logo-blanco.png" alt="logo pulpo blanco">                 
+            <h1 class="modal__title">Registrarse</h1>
+            <p class="modal__subtitle">y empieza a conseguir resultados</p>
+            <form class="modal-form">
+                <div class="modal-form__group">
+                    <label for="emailSingUp" class="modal-form__label">Correo</label>
+                    <input type="text" id="emailSingUp" class="modal-form__input" placeholder="tu-correo@senpaiacademy.com" name="tu-correo@senpaiacademy.com" required>
+                    <span></span>
+                </div>
+                <div class="modal-form__group">
+                    <label for="passwordSingUp" class="modal-form__label">Contraseña</label>
+                    <input type="password" id="passwordSingUp" class="modal-form__input" placeholder="*****************" name="" required>
+                    <span></span>
+                </div>
+                <div class="modal-form__group">
+                    <label for="passwordRepeat" class="modal-form__label">Repetir Contraseña</label>
+                    <input type="password" id="passwordRepeat" class="modal-form__input" placeholder="*****************" name="" required>
+                    <span></span>
+                </div>
+                <div class="modal-form__btn">
+                    <button type="submit" class="btn btn-big green" id="confirmBtn">Confirmar</button>
+                </div>
+            </form>
+            <div class="modal-span">
+                <span class="modal-span__text">Ya sos usuario?</span>
+                <a class="modal-span__link-sm" href="#" id="loginSingUp">Inicia sesión</a>
+            </div>
+        </article>
+    </section>
+    <script src="css/modules/module.js"></script>
+</body>
+</html>
